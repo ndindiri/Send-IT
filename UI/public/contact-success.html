@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My First Node JS</title>
+  <style>
+    body{background: skyblue; font-family: verdana; color: #111; padding: 30px;}
+    h1{font-size: 16px; text-align: center; text-transform: uppercase;letter-spacing: 2px;}
+    p{font-size: 16px; text-align: center;}
+    form{width: 400px; max-width: 100%; padding: 20px; margin: 20px auto;}
+    input, label{display: block; margin: 10px 0; padding: 5px; width: 100%;}
+    input[type='submit']{width: auto;}
+  </style>
+  <link rel="stylesheet" type="text/css" href="/assets/style.css">
+</head>
+<body>
+
+
+ 
+ <header>
+     <a href="index.html" class="header-brand"><span class="highlight">SEND</span>IT</a>
+     <nav>
+    
+      <div class="header-cases">
+        
+            <ul>
+              <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="Signup.html">Sign Up</a></li>
+          <li class="current"><a href="contact-success.html">Contact-success</a></li>
+          <li><a href="service.html">Service</a></li>
+          
+      </ul>
+      </div>
+         
+     </nav>
+   </header>
+
+  <h1>Contact Us !!</h1>
+  <p>Contact the coolest casts on the web right here....</p>
+  <p>Thanks for gettinh in touch!</p>
+  <p>You contacted <%= data.who %> in the <%= data.department %> department </p>
+  <p>We will reply to you at <%= data.email %></p>
+
+  </form>
+</body>
+</html>
