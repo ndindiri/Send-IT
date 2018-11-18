@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My First Node JS</title>
+  <style>
+    
+    form{width: 400px; max-width: 100%; padding: 20px; margin: 20px auto;}
+    input, label{display: block; margin: 10px 0; padding: 5px; width: 100%;}
+    input[type='submit']{width: auto;}
+  </style>
+  <link rel="stylesheet" type="text/css" href="/assets/style.css">
+</head>
+<body>
+
+
+ <header>
+     <a href="index.html" class="header-brand"><span class="highlight">SEND</span>IT</a>
+     <nav>
+    
+      <div class="header-cases">
+        
+            <ul>
+              <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="Signup.html">Sign Up</a></li>
+          <li class="current"><a href="contact.html">Contact</a></li>
+          <li><a href="service.html">Service</a></li>
+          
+      </ul>
+      </div>
+         
+     </nav>
+   </header>
+
+  <form id="contact-form" method="POST" action="/contact">
+
+  	<label for="who"> Who do you want to contact?</label>
+  	<input type="text" name="who" value="<%= qs.who %>">
+
+  	<label for="department">Which department?</label>
+  	<input type="text" name="department" value="<%= qs.dept %>">
+
+  	<label for="who">Your Email</label>
+  	<input type="email" name="email" >
+
+  	<input type="submit" value="submit" name="who">
+
+  </form>
+</body>
+</html>
